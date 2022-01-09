@@ -8,6 +8,7 @@ set ttimeout
 set ttimeoutlen=50
 set cmdheight=1
 set ruler
+set number
 set nopaste
 set display=lastline
 
