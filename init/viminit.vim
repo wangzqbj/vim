@@ -18,6 +18,8 @@ set noexpandtab
 set tabstop=8
 set wildmenu
 set switchbuf=newtab
+set incsearch
+set hlsearch
 
 set bg=dark
 colorscheme gruvbox
@@ -32,15 +34,20 @@ set formatoptions+=m
 set formatoptions+=B
 set showcmd
 
+" Use <C-L> to clear the highlighting of :set hlsearch.
+if maparg('<C-L>', 'n') ==# ''
+  nnoremap <silent> <C-L> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-L>
+endif
+
+" Load matchit.vim, but only if the user hasn't installed a newer version.
+if !exists('g:loaded_matchit') && findfile('plugin/matchit.vim', &rtp) ==# ''
+  runtime! macros/matchit.vim
+endif
 
 "----------------------------------------------------------------------
-" map CTRL_HJKL to move cursor in all mode
+" map CTRL_HJKL to move cursor in insert mode
 " config terminal bind <backspace> to ASCII code 127
 "----------------------------------------------------------------------
-noremap <C-h> <left>
-noremap <C-j> <down>
-noremap <C-k> <up>
-noremap <C-l> <right>
 inoremap <C-h> <left>
 inoremap <C-j> <down>
 inoremap <C-k> <up>
