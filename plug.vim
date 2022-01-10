@@ -15,7 +15,35 @@ call plug#begin()
 
 if has_key(s:enabled, 'simple')
 	Plug 'easymotion/vim-easymotion'
+	Plug 'tpope/vim-unimpaired'
+	Plug 'tpope/vim-surround'
+	Plug 'tpope/vim-eunuch'
 	IncScript site/easymotion.vim
+endif
+
+if has_key(s:enabled, 'basic')
+	Plug 'octol/vim-cpp-enhanced-highlight', { 'for': ['c', 'cpp'] }
+	Plug 'vim-python/python-syntax', { 'for': ['python'] }
+	Plug 'pboettch/vim-cmake-syntax', { 'for': ['cmake'] }
+	Plug 'Yggdroot/LeaderF'
+	Plug 'tamago324/LeaderF-filer'
+	IncScript site/syntax.vim
+	IncScript site/leaderf.vim
+endif
+
+if has_key(s:enabled, 'atask')
+	Plug 'skywind3000/asynctasks.vim'
+	Plug 'skywind3000/asyncrun.vim'
+endif
+
+if has_key(s:enabled, 'git')
+	Plug 'tpope/vim-fugitive'
+	Plug 'tpope/vim-rhubarb'
+endif
+
+if has_key(s:enabled, 'ycm')
+	Plug 'ycm-core/YouCompleteMe'
+	IncScript site/ycm.vim
 endif
 
 call plug#end()
