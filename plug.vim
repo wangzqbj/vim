@@ -34,7 +34,7 @@ endif
 if has_key(s:enabled, 'atask')
 	Plug 'skywind3000/asynctasks.vim'
 	Plug 'skywind3000/asyncrun.vim'
-	let g:asyncrun_open = 10
+	let g:asyncrun_open = 25
 	let g:asynctasks_rtp_config = "vim/tasks.ini"
 endif
 
