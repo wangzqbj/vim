@@ -5,3 +5,4 @@ exec 'set rtp+=~/.vim'
 
 
 IncScript init/viminit.vim
+IncScript init/vimmake.vim
