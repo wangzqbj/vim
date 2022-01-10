@@ -20,7 +20,7 @@ set wildmenu
 set switchbuf=newtab
 set incsearch
 set hlsearch
-
+set laststatus=2
 set bg=dark
 colorscheme gruvbox
 
@@ -33,6 +33,7 @@ endif
 set formatoptions+=m
 set formatoptions+=B
 set showcmd
+set noshowmode
 
 " Use <C-L> to clear the highlighting of :set hlsearch.
 if maparg('<C-L>', 'n') ==# ''

@@ -43,6 +43,11 @@ if has_key(s:enabled, 'git')
 	Plug 'tpope/vim-rhubarb'
 endif
 
+if has_key(s:enabled, 'lightline')
+	Plug 'itchyny/lightline.vim'
+	IncScript site/lightline.vim
+endif
+
 if has_key(s:enabled, 'ycm')
 	Plug 'ycm-core/YouCompleteMe'
 	IncScript site/ycm.vim
