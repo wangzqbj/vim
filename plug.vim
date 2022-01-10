@@ -23,8 +23,10 @@ if has_key(s:enabled, 'basic')
 	Plug 'octol/vim-cpp-enhanced-highlight', { 'for': ['c', 'cpp'] }
 	Plug 'vim-python/python-syntax', { 'for': ['python'] }
 	Plug 'pboettch/vim-cmake-syntax', { 'for': ['cmake'] }
+	Plug 'kergoth/vim-bitbake'
 	Plug 'Yggdroot/LeaderF'
 	Plug 'tamago324/LeaderF-filer'
+
 	IncScript site/syntax.vim
 	IncScript site/leaderf.vim
 endif
@@ -44,11 +46,6 @@ endif
 if has_key(s:enabled, 'ycm')
 	Plug 'ycm-core/YouCompleteMe'
 	IncScript site/ycm.vim
-endif
-
-if has_key(s:enabled, 'bitbake')
-	Plug 'kergoth/vim-bitbake'
-	let g:bb_create_on_empty = 0
 endif
 
 call plug#end()
