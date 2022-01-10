@@ -14,11 +14,9 @@ let s:enabled = g:bundle_enabled
 call plug#begin()
 
 if has_key(s:enabled, 'simple')
-	Plug 'easymotion/vim-easymotion'
 	Plug 'tpope/vim-unimpaired'
 	Plug 'tpope/vim-surround'
 	Plug 'tpope/vim-eunuch'
-	IncScript site/easymotion.vim
 endif
 
 if has_key(s:enabled, 'basic')
