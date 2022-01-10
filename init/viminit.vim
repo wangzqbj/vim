@@ -16,6 +16,7 @@ set shiftwidth=8
 set softtabstop=8
 set noexpandtab
 set tabstop=8
+set wildmenu
 
 if has('multi_byte')
 	set encoding=utf-8
