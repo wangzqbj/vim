@@ -48,4 +48,9 @@ if has_key(s:enabled, 'ycm')
 	IncScript site/ycm.vim
 endif
 
+if has_key(s:enabled, 'bitbake')
+	Plug 'kergoth/vim-bitbake'
+	let g:bb_create_on_empty = 0
+endif
+
 call plug#end()
