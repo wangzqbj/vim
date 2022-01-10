@@ -19,6 +19,9 @@ set tabstop=8
 set wildmenu
 set switchbuf=newtab
 
+set bg=dark
+colorscheme gruvbox
+
 if has('multi_byte')
 	set encoding=utf-8
 	set fileencoding=utf-8
