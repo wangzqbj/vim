@@ -24,7 +24,7 @@ if has_key(s:enabled, 'basic')
 	Plug 'vim-python/python-syntax', { 'for': ['python'] }
 	Plug 'pboettch/vim-cmake-syntax', { 'for': ['cmake'] }
 	Plug 'kergoth/vim-bitbake'
-	Plug 'Yggdroot/LeaderF'
+	Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 	Plug 'tamago324/LeaderF-filer'
 
 	IncScript site/syntax.vim
