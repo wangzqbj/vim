@@ -26,9 +26,11 @@ if has_key(s:enabled, 'basic')
 	Plug 'kergoth/vim-bitbake'
 	Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 	Plug 'tamago324/LeaderF-filer'
+	Plug 'vim-autoformat/vim-autoformat'
 
 	IncScript site/syntax.vim
 	IncScript site/leaderf.vim
+	IncScript site/autoformat.vim
 endif
 
 if has_key(s:enabled, 'atask')
