@@ -52,3 +52,4 @@ nnoremap <Leader>fb :<c-u>Leaderf buffer<cr>
 nnoremap <Leader>fm :<c-u>Leaderf mru<cr>
 nnoremap <Leader>fr :<c-u>Leaderf rg<cr>
 nnoremap <Leader>fg :<c-u>Leaderf rg --cword<cr>
+nnoremap <Leader>fc :<c-u>Leaderf --recall<cr>
