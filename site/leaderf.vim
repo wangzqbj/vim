@@ -33,6 +33,9 @@ let g:Lf_NormalMap = {
 let g:Lf_WindowPosition = 'popup'
 let g:Lf_PreviewInPopup = 1
 
+let g:Lf_GtagsAutoGenerate = 1
+let g:Lf_Gtagslabel = 'native-pygments'
+let g:Lf_GtagsSource = 2
 
 "----------------------------------------------------------------------
 " filer
@@ -53,3 +56,10 @@ nnoremap <Leader>fm :<c-u>Leaderf mru<cr>
 nnoremap <Leader>fr :<c-u>Leaderf rg<cr>
 nnoremap <Leader>fg :<c-u>Leaderf rg --cword<cr>
 nnoremap <Leader>fc :<c-u>Leaderf --recall<cr>
+nnoremap <Leader>jr :<c-u><c-r>=printf("Leaderf! gtags -r %s --auto-jump", expand("<cword>"))<cr><cr>
+nnoremap <Leader>jd :<c-u><c-r>=printf("Leaderf! gtags -d %s --auto-jump", expand("<cword>"))<cr><cr>
+nnoremap <Leader>jj :<c-u>Leaderf gtags --by-context --auto-jump<cr>
+
+" for openbmc project
+nnoremap <Leader>tu :<c-u>Leaderf gtags --update --gtagslibpath /usr/local/oecore-x86_64/sysroots/arm1176jzs-openbmc-linux-gnueabi/usr/include<cr>
+
