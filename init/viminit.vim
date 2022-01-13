@@ -21,8 +21,6 @@ set switchbuf=newtab
 set incsearch
 set hlsearch
 set laststatus=2
-set bg=dark
-colorscheme gruvbox
 
 if has('multi_byte')
 	set encoding=utf-8
