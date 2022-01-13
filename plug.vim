@@ -47,6 +47,7 @@ endif
 
 if has_key(s:enabled, 'lightline')
 	Plug 'itchyny/lightline.vim'
+	Plug 'shinchu/lightline-gruvbox.vim'
 	IncScript site/lightline.vim
 endif
 
