@@ -17,6 +17,7 @@ if has_key(s:enabled, 'simple')
 	Plug 'tpope/vim-unimpaired'
 	Plug 'tpope/vim-surround'
 	Plug 'tpope/vim-eunuch'
+	Plug 'tpope/vim-repeat'
 endif
 
 if has_key(s:enabled, 'basic')
