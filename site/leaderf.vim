@@ -63,3 +63,4 @@ nnoremap <Leader>jj :<c-u>Leaderf gtags --by-context --auto-jump<cr>
 " for openbmc project
 nnoremap <Leader>tu :<c-u>Leaderf gtags --update --gtagslibpath /usr/local/oecore-x86_64/sysroots/arm1176jzs-openbmc-linux-gnueabi/usr/include<cr>
 
+nnoremap <Leader>fd :exec 'Leaderf filer ' . shellescape(expand('%:p:h'))<cr>
