@@ -1,4 +1,3 @@
-nnoremap <Leader>p :<c-u>r!xclip -o<cr>
 
 if !empty($TMUX)
     set t_8f=[38;2;%lu;%lu;%lum
