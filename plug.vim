@@ -18,6 +18,7 @@ if has_key(s:enabled, 'simple')
 	Plug 'tpope/vim-surround'
 	Plug 'tpope/vim-eunuch'
 	Plug 'tpope/vim-repeat'
+	Plug 'lilydjwg/fcitx.vim'
 endif
 
 if has_key(s:enabled, 'basic')
