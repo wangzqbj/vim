@@ -19,6 +19,8 @@ if has_key(s:enabled, 'simple')
 	Plug 'tpope/vim-eunuch'
 	Plug 'tpope/vim-repeat'
 	Plug 'lilydjwg/fcitx.vim'
+	Plug 'voldikss/vim-translator'
+	IncScript site/translator.vim
 endif
 
 if has_key(s:enabled, 'basic')
@@ -26,6 +28,7 @@ if has_key(s:enabled, 'basic')
 	Plug 'vim-python/python-syntax', { 'for': ['python'] }
 	Plug 'pboettch/vim-cmake-syntax', { 'for': ['cmake'] }
 	Plug 'kergoth/vim-bitbake'
+	Plug 'mfukar/robotframework-vim'
 	Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 	Plug 'tamago324/LeaderF-filer'
 	Plug 'vim-autoformat/vim-autoformat'

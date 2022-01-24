@@ -13,3 +13,7 @@ let g:python_highlight_builtin_funcs = 1
 
 "vim-bitbake
 let g:bb_create_on_empty = 0
+
+"robot
+
+autocmd FileType robot setlocal shiftwidth=2 tabstop=2 softtabstop=2
