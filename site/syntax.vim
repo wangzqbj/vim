@@ -16,4 +16,4 @@ let g:bb_create_on_empty = 0
 
 "robot
 
-autocmd FileType robot setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType robot setlocal shiftwidth=4 tabstop=4 softtabstop=4 expandtab
