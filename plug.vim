@@ -62,7 +62,14 @@ if has_key(s:enabled, 'lightline')
 endif
 
 if has_key(s:enabled, 'ycm')
-	Plug 'ycm-core/YouCompleteMe'
+	function! BuildYCM(info)
+		if a:info.status == 'installed' || a:info.force
+			!./install.py --clangd-completer
+		endif
+	endfunction
+
+	Plug 'ycm-core/YouCompleteMe', { 'do': function('BuildYCM') }
+
 	IncScript site/ycm.vim
 endif
 
