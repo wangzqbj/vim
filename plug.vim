@@ -51,6 +51,8 @@ endif
 if has_key(s:enabled, 'git')
 	Plug 'tpope/vim-fugitive'
 	Plug 'tpope/vim-rhubarb'
+	Plug 'rhysd/git-messenger.vim'
+	Plug 'mhinz/vim-signify'
 endif
 
 if has_key(s:enabled, 'lightline')
