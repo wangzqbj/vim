@@ -18,6 +18,7 @@ if has_key(s:enabled, 'simple')
 	Plug 'tpope/vim-surround'
 	Plug 'tpope/vim-repeat'
 	Plug 'tpope/vim-endwise'
+	Plug 'tpope/vim-commentary'
 	Plug 'lilydjwg/fcitx.vim'
 	Plug 'voldikss/vim-translator'
 	IncScript site/translator.vim
