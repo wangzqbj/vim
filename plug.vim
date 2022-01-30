@@ -73,4 +73,8 @@ if has_key(s:enabled, 'ycm')
 	IncScript site/ycm.vim
 endif
 
+if has_key(s:enabled, 'kitty')
+	Plug 'fladson/vim-kitty'
+endif
+
 call plug#end()
