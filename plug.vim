@@ -34,6 +34,7 @@ if has_key(s:enabled, 'basic')
 	Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 	Plug 'tamago324/LeaderF-filer'
 	Plug 'vim-autoformat/vim-autoformat'
+	Plug 'jez/vim-superman'
 
 	IncScript site/syntax.vim
 	IncScript site/leaderf.vim
