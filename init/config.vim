@@ -41,4 +41,6 @@ function! Terminal_MetaMode(mode)
 	endif
 endfunc
 
-call Terminal_MetaMode(0)
+if $TERM != "xterm-kitty"
+	call Terminal_MetaMode(0)
+endif
