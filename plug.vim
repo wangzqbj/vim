@@ -21,6 +21,7 @@ if has_key(s:enabled, 'simple')
 	Plug 'tpope/vim-commentary'
 	Plug 'lilydjwg/fcitx.vim'
 	Plug 'voldikss/vim-translator'
+	Plug 'christoomey/vim-system-copy'
 	IncScript site/translator.vim
 endif
 
