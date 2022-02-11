@@ -17,8 +17,6 @@ if has_key(s:enabled, 'simple')
 	Plug 'tpope/vim-unimpaired'
 	Plug 'tpope/vim-surround'
 	Plug 'tpope/vim-repeat'
-	Plug 'tpope/vim-endwise'
-	Plug 'tpope/vim-commentary'
 	Plug 'lilydjwg/fcitx.vim'
 	Plug 'voldikss/vim-translator'
 	Plug 'christoomey/vim-system-copy'
@@ -61,7 +59,6 @@ endif
 
 if has_key(s:enabled, 'lightline')
 	Plug 'itchyny/lightline.vim'
-	Plug 'shinchu/lightline-gruvbox.vim'
 	IncScript site/lightline.vim
 endif
 
