@@ -20,6 +20,7 @@ if has_key(s:enabled, 'simple')
 	Plug 'lilydjwg/fcitx.vim'
 	Plug 'voldikss/vim-translator'
 	Plug 'christoomey/vim-system-copy'
+	Plug 'skywind3000/vim-terminal-help'
 	IncScript site/translator.vim
 endif
 
