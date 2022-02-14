@@ -12,3 +12,6 @@ set bg=dark
 set termguicolors
 let g:gruvbox_italic=1
 colorscheme gruvbox
+
+nnoremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
+nnoremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
