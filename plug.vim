@@ -79,4 +79,9 @@ if has_key(s:enabled, 'kitty')
 	Plug 'fladson/vim-kitty'
 endif
 
+if has_key(s:enabled, 'markdown')
+	Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+
+endif
+
 call plug#end()
