@@ -17,3 +17,6 @@ let g:bb_create_on_empty = 0
 "robot
 
 autocmd FileType robot setlocal shiftwidth=4 tabstop=4 softtabstop=4 expandtab
+
+"markdown
+autocmd FileType markdown hi link markdownError NONE
