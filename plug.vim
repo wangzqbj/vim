@@ -30,7 +30,6 @@ if has_key(s:enabled, 'basic')
 	Plug 'pboettch/vim-cmake-syntax', { 'for': ['cmake'] }
 	Plug 'kergoth/vim-bitbake'
 	Plug 'mfukar/robotframework-vim'
-	Plug 'KabbAmine/zeavim.vim'
 	Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 	Plug 'tamago324/LeaderF-filer'
 	Plug 'vim-autoformat/vim-autoformat'
@@ -40,7 +39,6 @@ if has_key(s:enabled, 'basic')
 	IncScript site/syntax.vim
 	IncScript site/leaderf.vim
 	IncScript site/autoformat.vim
-	IncScript site/zeal.vim
 	IncScript site/shellcheck.vim
 endif
 
