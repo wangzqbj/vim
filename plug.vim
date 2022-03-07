@@ -81,7 +81,7 @@ endif
 
 if has_key(s:enabled, 'markdown')
 	Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
-
+	nmap <Leader>md <Plug>MarkdownPreviewToggle
 endif
 
 call plug#end()
