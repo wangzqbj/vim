@@ -37,7 +37,6 @@ if has_key(s:enabled, 'basic')
 	Plug 'jez/vim-superman'
 	Plug 'itspriddle/vim-shellcheck'
 
-	IncScript site/syntax.vim
 	IncScript site/leaderf.vim
 	IncScript site/autoformat.vim
 	IncScript site/shellcheck.vim
