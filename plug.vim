@@ -17,7 +17,6 @@ if has_key(s:enabled, 'simple')
 	Plug 'tpope/vim-unimpaired'
 	Plug 'tpope/vim-surround'
 	Plug 'tpope/vim-repeat'
-	Plug 'lilydjwg/fcitx.vim'
 	Plug 'voldikss/vim-translator'
 	Plug 'christoomey/vim-system-copy'
 	Plug 'skywind3000/vim-terminal-help'
@@ -80,6 +79,10 @@ endif
 if has_key(s:enabled, 'markdown')
 	Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 	nmap <Leader>md <Plug>MarkdownPreviewToggle
+endif
+
+if has_key(s:enabled, 'fcitx')
+	Plug 'lilydjwg/fcitx.vim'
 endif
 
 call plug#end()
