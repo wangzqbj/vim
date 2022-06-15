@@ -24,8 +24,8 @@ if has_key(s:enabled, 'simple')
 endif
 
 if has_key(s:enabled, 'basic')
+	Plug 'mhinz/vim-startify'
 	Plug 'tomtom/tcomment_vim'
-	Plug 'octol/vim-cpp-enhanced-highlight', { 'for': ['c', 'cpp'] }
 	Plug 'vim-python/python-syntax', { 'for': ['python'] }
 	Plug 'pboettch/vim-cmake-syntax', { 'for': ['cmake'] }
 	Plug 'kergoth/vim-bitbake'
@@ -78,6 +78,7 @@ endif
 
 if has_key(s:enabled, 'markdown')
 	Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+	Plug 'vim-scripts/DrawIt'
 	nmap <Leader>md <Plug>MarkdownPreviewToggle
 endif
 
