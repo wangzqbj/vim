@@ -19,3 +19,6 @@ nnoremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 nnoremap <Leader>ps ?➜<cr>
 
 runtime! ftplugin/man.vim
+
+nnoremap <Leader>hl :<c-u>call matchadd('Search', '\%'.line('.').'l')<cr>
+nnoremap <Leader>chl :<c-u>call clearmatches()<cr>
