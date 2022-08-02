@@ -63,3 +63,13 @@ nnoremap <Leader>jj :<c-u>Leaderf gtags --by-context --auto-jump<cr>
 nnoremap <Leader>tu :<c-u>Leaderf gtags --update --gtagslibpath /usr/local/oecore-x86_64/sysroots/armv7ahf-vfpv4d16-openbmc-linux-gnueabi/usr/include<cr>
 
 nnoremap <Leader>fd :exec 'Leaderf filer ' . shellescape(expand('%:p:h'))<cr>
+
+function! s:ToggleWorkingDirectoryMode()
+	if strlen(g:Lf_WorkingDirectory) > 0
+		let g:Lf_WorkingDirectory = ""
+	else
+		let g:Lf_WorkingDirectory = expand("$_WORKSPACE_")
+	endif
+endfunction
+
+noremap <Leader>fw :<c-u>call <SID>ToggleWorkingDirectoryMode()<cr>
