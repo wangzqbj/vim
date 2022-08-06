@@ -47,6 +47,7 @@ if has_key(s:enabled, 'atask')
 	Plug 'skywind3000/asyncrun.vim'
 	let g:asyncrun_open = 25
 	let g:asynctasks_rtp_config = "vim/tasks.ini"
+	let g:asynctasks_term_pos = 'TAB'
 endif
 
 if has_key(s:enabled, 'git')
