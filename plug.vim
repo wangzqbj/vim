@@ -17,6 +17,7 @@ if has_key(s:enabled, 'simple')
 	Plug 'tpope/vim-unimpaired'
 	Plug 'tpope/vim-surround'
 	Plug 'tpope/vim-repeat'
+	Plug 'tpope/vim-eunuch'
 	Plug 'voldikss/vim-translator'
 	Plug 'christoomey/vim-system-copy'
 	Plug 'skywind3000/vim-terminal-help'
