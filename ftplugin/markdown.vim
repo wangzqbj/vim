@@ -4,3 +4,6 @@ autocmd BufWrite * :Autoformat
 
 "markdown
 autocmd FileType markdown hi link markdownError NONE
+
+setlocal dictionary+=~/.vim/vim/dict/word.dict
+setlocal complete+=k
