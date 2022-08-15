@@ -25,7 +25,6 @@ if has_key(s:enabled, 'simple')
 endif
 
 if has_key(s:enabled, 'basic')
-	Plug 'mhinz/vim-startify'
 	Plug 'tomtom/tcomment_vim'
 	Plug 'vim-python/python-syntax', { 'for': ['python'] }
 	Plug 'pboettch/vim-cmake-syntax', { 'for': ['cmake'] }
