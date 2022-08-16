@@ -12,6 +12,7 @@ set number
 set nopaste
 set display=lastline
 
+set smartcase
 set shiftwidth=8
 set softtabstop=8
 set noexpandtab
