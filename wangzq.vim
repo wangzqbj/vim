@@ -22,3 +22,5 @@ runtime! ftplugin/man.vim
 
 nnoremap <Leader>hl :<c-u>call matchadd('Search', '\%'.line('.').'l')<cr>
 nnoremap <Leader>chl :<c-u>call clearmatches()<cr>
+
+nnoremap - :call bufferhint#Popup()<cr>
