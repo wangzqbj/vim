@@ -53,6 +53,7 @@ nnoremap <Leader>ff :<c-u>Leaderf file<cr>
 nnoremap <Leader>fe :<c-u>Leaderf filer<cr>
 nnoremap <Leader>fb :<c-u>Leaderf buffer<cr>
 nnoremap <Leader>fm :<c-u>Leaderf mru<cr>
+nnoremap <Leader>fn :<c-u>Leaderf function<cr>
 nnoremap <Leader>fr :<c-u>Leaderf rg --cword<cr>
 nnoremap <Leader>fc :<c-u>Leaderf --recall<cr>
 nnoremap <Leader>jr :<c-u><c-r>=printf("Leaderf! gtags -r %s --auto-jump", expand("<cword>"))<cr><cr>
