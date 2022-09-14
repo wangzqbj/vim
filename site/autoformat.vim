@@ -21,6 +21,6 @@ function! s:ToggleAuFormat()
 	endif
 endfunction
 
-call <SID>EnableAuFormat()
+autocmd FileType * call s:EnableAuFormat()
 
 nnoremap <Leader>af :<c-u>call <SID>ToggleAuFormat()<cr>
