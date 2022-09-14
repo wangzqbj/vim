@@ -43,16 +43,6 @@ if !exists('g:loaded_matchit') && findfile('plugin/matchit.vim', &rtp) ==# ''
 endif
 
 "----------------------------------------------------------------------
-" map CTRL_HJKL to move cursor in insert mode
-" config terminal bind <backspace> to ASCII code 127
-"----------------------------------------------------------------------
-inoremap <C-h> <left>
-inoremap <C-j> <down>
-inoremap <C-k> <up>
-inoremap <C-l> <right>
-
-
-"----------------------------------------------------------------------
 " buffer keymap
 "----------------------------------------------------------------------
 noremap <silent>\bn :bn<cr>

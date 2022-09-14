@@ -21,7 +21,6 @@ function! s:ToggleAuFormat()
 	endif
 endfunction
 
-autocmd FileType python,cpp,json call s:EnableAuFormat()
-autocmd FileType gitcommit,markdown call s:EnableAuFormat()
+call <SID>EnableAuFormat()
 
 nnoremap <Leader>af :<c-u>call <SID>ToggleAuFormat()<cr>

@@ -28,3 +28,17 @@ nnoremap - :call bufferhint#Popup()<cr>
 
 vnoremap <C-y> "+y
 nnoremap <C-p> "+p
+
+inoremap <C-h> <left>
+inoremap <C-j> <down>
+inoremap <C-k> <up>
+inoremap <C-l> <right>
+
+cnoremap <c-h> <left>
+cnoremap <c-j> <down>
+cnoremap <c-k> <up>
+cnoremap <c-l> <right>
+cnoremap <c-a> <home>
+cnoremap <c-e> <end>
+cnoremap <c-f> <c-d>
+cnoremap <c-d> <del>
