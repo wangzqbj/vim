@@ -25,6 +25,10 @@ nnoremap <Leader>chl :<c-u>call clearmatches()<cr>
 
 nnoremap - :call bufferhint#Popup()<cr>
 
+if has('patch-8.2.4500')
+	set wildoptions+=pum,fuzzy
+	set wildmode=longest,full
+endif
 
 vnoremap <C-y> "+y
 nnoremap <C-p> "+p
