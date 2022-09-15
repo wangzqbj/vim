@@ -53,16 +53,16 @@ nmap <leader>D <plug>(YCMHover)
 "----------------------------------------------------------------------
 " Ycm White List
 "----------------------------------------------------------------------
-let g:ycm_filetype_whitelist = { 
+let g:ycm_filetype_whitelist = {
 			\ "c":1,
-			\ "cpp":1, 
+			\ "cpp":1,
 			\ "objc":1,
 			\ "objcpp":1,
 			\ "python":1,
 			\ "java":1,
 			\ "javascript":1,
 			\ "coffee":1,
-			\ "vim":1, 
+			\ "vim":1,
 			\ "go":1,
 			\ "cs":1,
 			\ "lua":1,

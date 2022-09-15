@@ -13,6 +13,14 @@ set termguicolors
 let g:gruvbox_italic=1
 colorscheme gruvbox
 
+"----------------------------------------------------------------------
+" miscs
+"----------------------------------------------------------------------
+set scrolloff=2
+set showmatch
+set matchtime=3
+set listchars=tab:\|\ ,trail:.,extends:>,precedes:<
+
 nnoremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
 nnoremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 
@@ -48,3 +56,22 @@ cnoremap <c-a> <home>
 cnoremap <c-e> <end>
 cnoremap <c-f> <c-d>
 cnoremap <c-d> <del>
+
+"----------------------------------------------------------------------
+" tab keymap
+"----------------------------------------------------------------------
+noremap <silent>\to :tabonly<cr>
+noremap <silent>\1 :tabn 1<cr>
+noremap <silent>\2 :tabn 2<cr>
+noremap <silent>\3 :tabn 3<cr>
+noremap <silent>\4 :tabn 4<cr>
+noremap <silent>\5 :tabn 5<cr>
+noremap <silent>\6 :tabn 6<cr>
+noremap <silent>\7 :tabn 7<cr>
+noremap <silent>\8 :tabn 8<cr>
+noremap <silent>\9 :tabn 9<cr>
+noremap <silent>\0 :tabn 10<cr>
+
+" quit all
+noremap <silent>Q :<c-u>confirm qall<cr>
+
