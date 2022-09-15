@@ -1,0 +1,39 @@
+# build vim
+
+依云:
+./configure \
+--prefix=/usr \
+--localstatedir=/var/lib/vim \
+--mandir=/usr/share/man \
+--enable-acl \
+--enable-cscope \
+--enable-luainterp=dynamic \
+--enable-multibyte \
+--enable-perlinterp=dynamic \
+--enable-python3interp=dynamic \
+--enable-rubyinterp=dynamic \
+--enable-terminal \
+--with-features=huge \
+--with-luajit \
+--disable-icon-cache-update --disable-desktop-database-update \
+--enable-xsmp --enable-gui=gtk3) --enable-fail-if-missing
+
+Chen:
+./configure --prefix=/usr/local/vim --enable-python3interp=yes --with-features=huge
+make VIMRUNTIMEDIR=/usr/local/vim/share/vim/vim82
+make install
+
+LinWei:
+./configure —with-features=huge —enable-python3interp —enable-pythoninterp —enable-luainterp —enable-perlinterp
+
+wangzq:
+
+./configure \
+--prefix=$HOME/.local \
+--with-features=huge \
+--enable-python3interp \
+--enable-luainterp \
+--enable-perlinterp \
+--disable-icon-cache-update --disable-desktop-database-update \
+--enable-gui=gtk3
+
