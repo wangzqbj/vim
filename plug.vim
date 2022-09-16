@@ -48,6 +48,10 @@ endfunction
 Plug 'ycm-core/YouCompleteMe', { 'do': function('BuildYCM') }
 IncScript site/ycm.vim
 
+Plug 'Shougo/echodoc.vim'
+set noshowmode
+let g:echodoc#enable_at_startup = 1
+
 Plug 'fladson/vim-kitty'
 
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
