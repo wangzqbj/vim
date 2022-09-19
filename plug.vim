@@ -60,4 +60,12 @@ nmap <Leader>md <Plug>MarkdownPreviewToggle
 Plug 'vim-scripts/DrawIt'
 Plug 'lilydjwg/fcitx.vim'
 
+Plug 'kana/vim-textobj-user'
+" Plug 'kana/vim-textobj-indent'
+Plug 'kana/vim-textobj-syntax'
+Plug 'kana/vim-textobj-function', { 'for':['c', 'cpp', 'vim', 'java'] }
+Plug 'sgur/vim-textobj-parameter'
+Plug 'bps/vim-textobj-python', {'for': 'python'}
+Plug 'jceb/vim-textobj-uri'
+
 call plug#end()
