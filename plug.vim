@@ -10,7 +10,6 @@ Plug 'tpope/vim-eunuch'
 Plug 'yianwillis/vimcdoc'
 Plug 'voldikss/vim-translator'
 IncScript site/translator.vim
-Plug 'christoomey/vim-system-copy'
 Plug 'skywind3000/vim-terminal-help'
 
 Plug 'tomtom/tcomment_vim'
@@ -49,8 +48,8 @@ Plug 'ycm-core/YouCompleteMe', { 'do': function('BuildYCM') }
 IncScript site/ycm.vim
 
 Plug 'Shougo/echodoc.vim'
-set noshowmode
 let g:echodoc#enable_at_startup = 1
+let g:echodoc#type = 'popup'
 
 Plug 'fladson/vim-kitty'
 
