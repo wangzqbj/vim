@@ -15,7 +15,6 @@ Plug 'skywind3000/vim-terminal-help'
 Plug 'tomtom/tcomment_vim'
 Plug 'vim-python/python-syntax', { 'for': ['python'] }
 Plug 'pboettch/vim-cmake-syntax', { 'for': ['cmake'] }
-Plug 'kergoth/vim-bitbake'
 Plug 'mfukar/robotframework-vim'
 Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 Plug 'tamago324/LeaderF-filer'
