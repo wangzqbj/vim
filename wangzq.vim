@@ -61,6 +61,7 @@ cnoremap <c-d> <del>
 " tab keymap
 "----------------------------------------------------------------------
 noremap <silent>\to :tabonly<cr>
+noremap <silent>\tq :tabclose<cr>
 noremap <silent>\1 :tabn 1<cr>
 noremap <silent>\2 :tabn 2<cr>
 noremap <silent>\3 :tabn 3<cr>

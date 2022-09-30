@@ -66,4 +66,10 @@ Plug 'sgur/vim-textobj-parameter'
 Plug 'bps/vim-textobj-python', {'for': 'python'}
 Plug 'jceb/vim-textobj-uri'
 
+if has('vim9script')
+	Plug 'Eliot00/git-lens.vim'
+	let g:GIT_LENS_ENABLED=v:true
+endif
+
+
 call plug#end()
