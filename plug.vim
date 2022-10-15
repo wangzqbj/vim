@@ -39,7 +39,7 @@ IncScript site/lightline.vim
 
 function! BuildYCM(info)
 	if a:info.status == 'installed' || a:info.force
-		!./install.py --clangd-completer
+		!./install.py --clang-completer
 	endif
 endfunction
 
@@ -68,8 +68,10 @@ Plug 'jceb/vim-textobj-uri'
 Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
 if has('vim9script')
 	Plug 'Eliot00/git-lens.vim'
-	let g:GIT_LENS_ENABLED=v:true
+	nnoremap <Leader>gl :<c-u>call ToggleGitLens()<cr>
 endif
 
+Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
+IncScript site/hexokinase.vim
 
 call plug#end()
