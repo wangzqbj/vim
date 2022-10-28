@@ -21,10 +21,9 @@ set showmatch
 set matchtime=3
 set listchars=tab:\|\ ,trail:.,extends:>,precedes:<
 
+let g:netrw_browsex_viewer= "xdg-open"
 nnoremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
 nnoremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
-
-nnoremap <Leader>ps ?➜<cr>
 
 runtime! ftplugin/man.vim
 set keywordprg=:Man
