@@ -10,8 +10,7 @@ endif
 
 set bg=dark
 set termguicolors
-let g:gruvbox_italic=1
-colorscheme gruvbox
+colorscheme solarized8
 
 "----------------------------------------------------------------------
 " miscs

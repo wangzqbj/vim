@@ -75,4 +75,7 @@ endif
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 IncScript site/hexokinase.vim
 
+Plug 'rafi/awesome-vim-colorschemes'
+Plug 'flazz/vim-colorschemes'
+
 call plug#end()
