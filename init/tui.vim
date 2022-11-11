@@ -6,4 +6,12 @@ let &t_SR = "\e[4 q"
 "
 set termguicolors
 set bg=dark
-colorscheme gruvbox
+
+function RandomColorScheme()
+	let mypicks = ["gruvbox", "ayu", "molokai", "iceberg", "pyte"]
+	let mypick = mypicks[ str2nr(strftime("%y%m%d"))  % len(mypicks)]
+	"let mypick = mypicks[ localtime() % len(mypicks)]
+	execute 'colo' mypick
+endfunction
+
+call RandomColorScheme()
