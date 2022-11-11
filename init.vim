@@ -5,7 +5,8 @@ exec 'set rtp+=~/.vim'
 
 
 IncScript init/viminit.vim
-IncScript init/vimmake.vim
+IncScript plug.vim
+IncScript misc.vim
 
 if has('gui_running')
 	IncScript init/gui.vim

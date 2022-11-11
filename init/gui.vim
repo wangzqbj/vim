@@ -9,3 +9,6 @@ set columns=999
 
 "tabline h tab-page
 set guitablabel=%N\ %f
+
+set bg=dark
+colorscheme solarized8

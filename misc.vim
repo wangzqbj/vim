@@ -8,10 +8,6 @@ if $TERM == "xterm-kitty"
 	let &t_ut=''
 endif
 
-set bg=dark
-set termguicolors
-colorscheme solarized8
-
 "----------------------------------------------------------------------
 " miscs
 "----------------------------------------------------------------------
