@@ -77,5 +77,7 @@ IncScript site/hexokinase.vim
 
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'flazz/vim-colorschemes'
+Plug 'easymotion/vim-easymotion'
+IncScript site/easymotion.vim
 
 call plug#end()
