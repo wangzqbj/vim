@@ -67,7 +67,7 @@ Plug 'sgur/vim-textobj-parameter'
 Plug 'bps/vim-textobj-python', {'for': 'python'}
 Plug 'jceb/vim-textobj-uri'
 Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
-if has('vim9script')
+if v:version >= 900
 	Plug 'Eliot00/git-lens.vim'
 	nnoremap <Leader>gl :<c-u>call ToggleGitLens()<cr>
 endif

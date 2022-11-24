@@ -8,7 +8,7 @@ set termguicolors
 set bg=dark
 
 function RandomColorScheme()
-	let mypicks = ["gruvbox", "ayu", "molokai", "iceberg", "pyte"]
+	let mypicks = ["gruvbox", "ayu", "molokai", "pyte"]
 	let mypick = mypicks[ str2nr(strftime("%y%m%d"))  % len(mypicks)]
 	"let mypick = mypicks[ localtime() % len(mypicks)]
 	execute 'colo' mypick

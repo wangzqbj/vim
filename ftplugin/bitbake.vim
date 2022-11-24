@@ -37,3 +37,5 @@ function! s:append_project_path()
 endfunction
 
 autocmd VimEnter * call s:append_project_path()
+
+command! AppendPath call s:append_project_path()
