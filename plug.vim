@@ -34,6 +34,7 @@ let g:asynctasks_term_pos = 'TAB'
 
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
+Plug 'junegunn/gv.vim'
 Plug 'mhinz/vim-signify'
 Plug 'itchyny/lightline.vim'
 IncScript site/lightline.vim
