@@ -8,6 +8,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-sleuth'
+Plug 'tpope/vim-vinegar'
 Plug 'yianwillis/vimcdoc'
 Plug 'voldikss/vim-translator'
 IncScript site/translator.vim

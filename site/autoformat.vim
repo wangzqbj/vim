@@ -21,6 +21,6 @@ function! s:ToggleAuFormat()
 	endif
 endfunction
 
-autocmd VimEnter * call s:EnableAuFormat()
+autocmd FileType cpp call s:EnableAuFormat()
 
 nnoremap <Leader>af :<c-u>call <SID>ToggleAuFormat()<cr>

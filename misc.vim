@@ -27,8 +27,6 @@ nnoremap <Leader>hl :<c-u>call matchadd('Search', '\%'.line('.').'l')<cr>
 nnoremap <Leader>chl :<c-u>call clearmatches()<cr>
 nnoremap <Leader>cd :cd %:p:h<CR>:pwd<CR>
 
-nnoremap - :call bufferhint#Popup()<cr>
-
 if has('patch-8.2.4500')
 	set wildoptions+=pum,fuzzy
 	set wildmode=longest,full
