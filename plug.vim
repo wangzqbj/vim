@@ -82,4 +82,7 @@ Plug 'flazz/vim-colorschemes'
 Plug 'easymotion/vim-easymotion'
 IncScript site/easymotion.vim
 
+Plug 'mbbill/undotree'
+IncScript site/undo.vim
+
 call plug#end()
