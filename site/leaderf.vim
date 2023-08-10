@@ -56,14 +56,12 @@ nnoremap <Leader>fm :<c-u>Leaderf mru<cr>
 nnoremap <Leader>fn :<c-u>Leaderf function<cr>
 nnoremap <Leader>fr :<c-u>Leaderf rg --cword<cr>
 nnoremap <Leader>fc :<c-u>Leaderf --recall<cr>
-nnoremap <Leader>jr :<c-u><c-r>=printf("Leaderf! gtags -r %s --auto-jump", expand("<cword>"))<cr><cr>
-nnoremap <Leader>jd :<c-u><c-r>=printf("Leaderf! gtags -d %s --auto-jump", expand("<cword>"))<cr><cr>
-nnoremap <Leader>jj :<c-u>Leaderf gtags --by-context --auto-jump<cr>
+nnoremap <Leader>gr :<c-u><c-r>=printf("Leaderf! gtags -r %s --auto-jump", expand("<cword>"))<cr><cr>
+nnoremap <Leader>gd :<c-u><c-r>=printf("Leaderf! gtags -d %s --auto-jump", expand("<cword>"))<cr><cr>
+nnoremap <Leader>gg :<c-u>Leaderf gtags --by-context --auto-jump<cr>
 
 " for openbmc project
 nnoremap <Leader>tu :<c-u>Leaderf gtags --update --gtagslibpath /usr/local/oecore-x86_64/sysroots/armv7ahf-vfpv4d16-openbmc-linux-gnueabi/usr/include<cr>
-
-nnoremap <Leader>fd :exec 'Leaderf filer ' . shellescape(expand('%:p:h'))<cr>
 
 function! s:ToggleWorkingDirectoryMode()
 	if strlen(g:Lf_WorkingDirectory) > 0
