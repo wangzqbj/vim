@@ -85,4 +85,9 @@ IncScript site/easymotion.vim
 Plug 'mbbill/undotree'
 IncScript site/undo.vim
 
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+IncScript site/ultisnips.vim
+Plug 'skywind3000/Leaderf-snippet'
+
 call plug#end()

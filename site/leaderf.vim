@@ -72,3 +72,5 @@ function! s:ToggleWorkingDirectoryMode()
 endfunction
 
 noremap <Leader>fw :<c-u>call <SID>ToggleWorkingDirectoryMode()<cr>
+
+inoremap <c-x><c-x> <c-\><c-o>:Leaderf snippet<cr>
