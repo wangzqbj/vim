@@ -1,13 +1,3 @@
-
-if !empty($TMUX)
-	set t_8f=[38;2;%lu;%lu;%lum
-	set t_8b=[48;2;%lu;%lu;%lum
-endif
-
-if $TERM == "xterm-kitty"
-	let &t_ut=''
-endif
-
 "----------------------------------------------------------------------
 " miscs
 "----------------------------------------------------------------------
@@ -67,4 +57,13 @@ noremap <silent>\0 :tabn 10<cr>
 
 " quit all
 noremap <silent>Q :<c-u>confirm qall<cr>
+
+function RandomColorScheme()
+	let mypicks = ["gruvbox", "ayu", "molokai", "pyte"]
+	let mypick = mypicks[ str2nr(strftime("%y%m%d"))  % len(mypicks)]
+	"let mypick = mypicks[ localtime() % len(mypicks)]
+	execute 'colo' mypick
+endfunction
+
+call RandomColorScheme()
 

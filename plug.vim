@@ -12,7 +12,6 @@ Plug 'tpope/vim-vinegar'
 Plug 'yianwillis/vimcdoc'
 Plug 'voldikss/vim-translator'
 IncScript site/translator.vim
-Plug 'skywind3000/vim-terminal-help'
 
 Plug 'tomtom/tcomment_vim'
 Plug 'vim-python/python-syntax', { 'for': ['python'] }
