@@ -41,7 +41,7 @@ IncScript site/lightline.vim
 
 function! BuildYCM(info)
 	if a:info.status == 'installed' || a:info.force
-		!./install.py --clang-completer
+		!./install.py --clangd-completer
 	endif
 endfunction
 
