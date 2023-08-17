@@ -73,9 +73,6 @@ if v:version >= 900
 	nnoremap <Leader>gl :<c-u>call ToggleGitLens()<cr>
 endif
 
-Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
-IncScript site/hexokinase.vim
-
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'flazz/vim-colorschemes'
 Plug 'easymotion/vim-easymotion'
