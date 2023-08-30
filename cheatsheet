@@ -37,3 +37,7 @@ wangzq:
 --disable-icon-cache-update --disable-desktop-database-update \
 --enable-gui=gtk3
 
+
+update gtags:
+
+gtags --incremental ~/.vim/cache/.LfCache/gtags/_home_wangzq_workspace_linux-aspeed

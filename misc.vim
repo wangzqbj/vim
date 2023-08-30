@@ -59,7 +59,7 @@ noremap <silent>\0 :tabn 10<cr>
 noremap <silent>Q :<c-u>confirm qall<cr>
 
 function RandomColorScheme()
-	let mypicks = ["gruvbox", "ayu", "molokai", "pyte"]
+	let mypicks = ["gruvbox", "ayu", "molokai"]
 	let mypick = mypicks[ str2nr(strftime("%y%m%d"))  % len(mypicks)]
 	"let mypick = mypicks[ localtime() % len(mypicks)]
 	execute 'colo' mypick

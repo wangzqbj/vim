@@ -34,6 +34,7 @@ let g:Lf_WindowPosition = 'popup'
 let g:Lf_PreviewInPopup = 1
 
 let g:Lf_GtagsAutoGenerate = 1
+let g:Lf_GtagsAutoUpdate = 1
 let g:Lf_Gtagslabel = 'native-pygments'
 let g:Lf_GtagsSource = 2
 
@@ -41,7 +42,7 @@ let g:Lf_GtagsSource = 2
 " filer
 "----------------------------------------------------------------------
 let g:Lf_FilerShowPromptPath = 1
-let g:Lf_FilerInsertMap = { '<Tab>': 'open_current', '<CR>': 'open_current',
+let g:Lf_FilerInsertMap = {'<CR>': 'open_current',
 	\ '<BS>': 'open_parent_or_backspace', '<up>': 'up', '<down>': 'down'}
 let g:Lf_FilerNormalMap = {'i': 'switch_insert_mode', '<esc>': 'quit', 
 	\ '~': 'goto_root_marker_dir', 'M': 'mkdir', 'T': 'create_file' }
@@ -51,26 +52,12 @@ let g:Lf_FilerNormalMap = {'i': 'switch_insert_mode', '<esc>': 'quit',
 "----------------------------------------------------------------------
 nnoremap <Leader>ff :<c-u>Leaderf file<cr>
 nnoremap <Leader>fe :<c-u>Leaderf filer<cr>
-nnoremap <Leader>fb :<c-u>Leaderf buffer<cr>
-nnoremap <Leader>fm :<c-u>Leaderf mru<cr>
 nnoremap <Leader>fn :<c-u>Leaderf function<cr>
+nnoremap <Leader>ft :<c-u>Leaderf gtags --update<cr>
 nnoremap <Leader>fr :<c-u>Leaderf rg --cword<cr>
 nnoremap <Leader>fc :<c-u>Leaderf --recall<cr>
 nnoremap <Leader>gr :<c-u><c-r>=printf("Leaderf! gtags -r %s --auto-jump", expand("<cword>"))<cr><cr>
 nnoremap <Leader>gd :<c-u><c-r>=printf("Leaderf! gtags -d %s --auto-jump", expand("<cword>"))<cr><cr>
 nnoremap <Leader>gg :<c-u>Leaderf gtags --by-context --auto-jump<cr>
-
-" for openbmc project
-nnoremap <Leader>tu :<c-u>Leaderf gtags --update --gtagslibpath /usr/local/oecore-x86_64/sysroots/armv7ahf-vfpv4d16-openbmc-linux-gnueabi/usr/include<cr>
-
-function! s:ToggleWorkingDirectoryMode()
-	if strlen(g:Lf_WorkingDirectory) > 0
-		let g:Lf_WorkingDirectory = ""
-	else
-		let g:Lf_WorkingDirectory = expand("$_WORKSPACE_")
-	endif
-endfunction
-
-noremap <Leader>fw :<c-u>call <SID>ToggleWorkingDirectoryMode()<cr>
 
 inoremap <c-x><c-x> <c-\><c-o>:Leaderf snippet<cr>
