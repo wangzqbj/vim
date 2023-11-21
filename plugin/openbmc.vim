@@ -25,8 +25,8 @@ function! s:append_project_path()
                 \ 'meta-aspeed',
                 \ 'meta-inspur',
                 \ 'meta-inspur/meta-x86',
-                \ 'meta-inspur/meta-nf5280m7'
-                \ 'meta-inspur/meta-fp5280g3'
+                \ 'meta-inspur/meta-nf5280m7',
+                \ 'meta-inspur/meta-fp5280g3',
                 \ ]
     for meta in metas
         call s:append_path(root, meta)
@@ -42,10 +42,12 @@ augroup END
 
 function s:buildOBMCImage()
     call system('tmux-popup-obmc.sh buildOBMCImage')
+    call system('tmux-popup.sh')
 endfunction
 
 function s:buildOBMCRepo()
     call system('tmux-popup-obmc.sh buildOBMCRepo ' .. wzqlib#path#get_root('%'))
+    call system('tmux-popup.sh')
 endfunction
 
 command! -nargs=0 BuildOBMCImage call s:buildOBMCImage()

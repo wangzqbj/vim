@@ -112,10 +112,6 @@ ab amoung among
 ab amout amount
 ab amplifer amplifier
 ab amplifyer amplifier
-ab an  ion->a union
-ab an  er->a user
-ab an  erspace->a userspace
-ab an  e->a one
 ab analysator analyzer
 ab ang and
 ab anniversery anniversary
