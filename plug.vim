@@ -9,6 +9,7 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-vinegar'
+Plug 'preservim/vimux'
 Plug 'yianwillis/vimcdoc'
 Plug 'voldikss/vim-translator'
 IncScript site/translator.vim
