@@ -11,6 +11,7 @@ Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-vinegar'
 Plug 'preservim/vimux'
 Plug 'yianwillis/vimcdoc'
+Plug 'editorconfig/editorconfig-vim'
 Plug 'voldikss/vim-translator'
 IncScript site/translator.vim
 
