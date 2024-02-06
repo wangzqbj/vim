@@ -28,8 +28,13 @@ Plug 'jez/vim-superman'
 Plug 'itspriddle/vim-shellcheck'
 IncScript site/shellcheck.vim
 
+Plug 'majutsushi/tagbar'
+nnoremap <Leader>tb :TagbarToggle<CR>
+
 Plug 'skywind3000/asynctasks.vim'
 Plug 'skywind3000/asyncrun.vim'
+Plug 'skywind3000/vim-quickui'
+
 let g:asyncrun_open = 25
 let g:asynctasks_rtp_config = "vim/tasks.ini"
 let g:asynctasks_term_pos = 'TAB'
@@ -83,9 +88,14 @@ IncScript site/easymotion.vim
 Plug 'mbbill/undotree'
 IncScript site/undo.vim
 
+Plug 'ryanoasis/vim-devicons'
+
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 IncScript site/ultisnips.vim
 Plug 'skywind3000/Leaderf-snippet'
+
+Plug 'rhysd/vim-grammarous'
+IncScript site/grammarous.vim
 
 call plug#end()
